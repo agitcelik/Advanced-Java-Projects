@@ -1,0 +1,11 @@
+1.java dosyalarini derlemek icin,"classpath" belirtilmelidir
+javac -classpath kutuphane.jar *.java
+
+2. "classpath" degiseni atanmalidir
+
+CLASSPATH=kutuphana.jar:"." (Linux)
+CLASSPATH=kutuphane.jar;"." (Windows)
+export CLASSPATH
+javac *.java
+java Server
+......
